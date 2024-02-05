@@ -1,0 +1,85 @@
+.texto
+  font-size: 0.24rem
+  text-shadow: 1px 1px 1px #000
+  transition: transform 0.3s ease
+  display: block
+  margin: 1px
+  border: 1px solid #ddd
+  width: 25px
+  height: 25px
+  border-radius: 50%
+  cursor: pointer
+  transition: all 0.3s ease
+  text-align: center
+
+  line-height: 22px
+  &:hover
+    font-size: 0.27rem
+    transition: transform 0.3s ease
+
+
+@keyframes fadeIn
+  from
+    opacity: 0
+    transform: translateY(20px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+
+.fade-in-animation
+  animation: fadeIn 0.5s ease forwards
+
+
+
+
+#evaluar
+  transition: fill 0.3s ease
+  &:hover
+    fill: #000
+#analizar
+  transition: fill 0.3s ease
+  &:hover
+    fill: #000
+#recordar
+  transition: fill 0.3s ease
+  &:hover
+    fill: #000
+#crear
+  transition: fill 0.3s ease
+  &:hover
+    fill: #000
+#aplicar
+  transition: fill 0.3s ease
+  &:hover
+    fill: #000
+#entender
+  transition: fill 0.3s ease
+  &:hover
+    fill: #000
+
+
+#detalles
+  transform: translateY(-50%)
+  background-color: #fff
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2)
+  border-radius: 4px
+
+
+.rap-details
+  padding: 20px
+  transition: all 0.5s ease-in-out
+
+
+.rap-title
+  background-color: #f0f0f0
+  padding: 10px
+  margin-bottom: 20px
+  font-weight: bold
+.rap-info
+  padding: 0 10px 10px 10px
+  font-weight: bold
+.rap-level
+  font-style: italic
+.rap-title, .rap-level, .rap-detail
+  word-wrap: break-word

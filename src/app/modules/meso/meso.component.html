@@ -1,0 +1,89 @@
+
+<div class="row">
+  <div>
+    <img src="assets/images/logounpais.svg" width="100%">
+  </div>
+  <div class="d-flex" >
+    <div id="perfil">
+      <div>
+        <h6>Perfil de Egreso</h6>
+        {{organigrama.perfil}}
+      </div>
+      <div class="d-flex flex-column" style="margin: auto;">
+        <div *ngFor="let item of organigrama.tipocompetencias" class="text-center" (click)="toggleCompetencia(item)">
+          <div class="tipo-competencia" [style.background-color]="item.color" [class.active]="item.activo">
+            {{ item.abr }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="competencias" class="my-3">
+  <div style="display: flex;">
+    <div *ngFor="let item of organigrama.competencias" >
+      <app-competencia [item]="item" [color]="obtenerColorPorAbr(item.abr)"></app-competencia>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="row">
+  <div class="col-8">
+    <div class="d-flex flex-wrap">
+      <div class="cursor mt-4 me-4 p-2 border position-relative" *ngFor="let competencia of competencias" [ngStyle]="{'background-color': getBackgroundColor(competencia)}" (click)="displayRight(competencia)">
+        {{ competencia.abr }}-{{ competencia.id }}
+
+
+      </div>
+    </div>
+  </div>
+  <div class="col-4 py-3" *ngIf="display" [ngStyle]="{'background-color': getBackgroundColor(display)}">
+    <h5>
+      Competencia {{gettipo(display)}}
+      <div class="me-1 mb-1 p-1 text-center">
+      </div>
+    </h5>
+    <p>
+      <b>{{display?.id}}</b>  - {{display?.detalle}}
+    </p>
+  </div>
+</div>
+<div class="row mt-5 pt-3" style="border-top: 3px solid #bbb ;">
+  <div class="col-sm-12 mt-3 col-md-4">
+    <h6>Categoria Competencia</h6>
+    <div *ngFor="let tipo of tipocompetencias" class="d-flex">
+      <div class="me-1 mb-1 p-1 text-center" [ngStyle]="{'background-color': tipo.color, 'width': '35px'}">
+        {{tipo.abr}}
+      </div>
+      <div class="p-1">
+        {{tipo.nombre}}
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 mt-3 col-md-4">
+    <h6>Taxonomía de Bloom</h6>
+    <div *ngFor="let item of taxonomia" class="d-flex">
+      <div class="me-1 mb-1 p-1 text-center text-white" [ngStyle]="{'background-color': item.color, 'width': '30px'}">
+
+      </div>
+      <div class="p-1">
+        {{item.nombre}}
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12 mt-3 col-md-4">
+    <h6>Componente Formación</h6>
+    <div *ngFor="let item of componentes" class="d-flex">
+      <div class="me-1 mb-1 p-1 text-center text-white" [ngStyle]="{'background-color': item.color, 'width': '35px'}">
+        {{item.abr}}
+      </div>
+      <div class="p-1">
+        {{item.nombre}}
+      </div>
+    </div>
+  </div>
+
+</div>
+-->

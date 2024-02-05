@@ -1,27 +1,26 @@
-# App
+# Concreción Curricular - Programa de Ingeniería de Sistemas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+Esta aplicación presenta el perfil de egreso de los estudiantes del programa académico de Ingeniería de Sistemas de la Universidad del Pacífico.
 
-## Development server
+![Logo de Ingeniería de Sistemas]('assets/images/logounpais.svg')
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Competencias del Programa
 
-## Code scaffolding
+El primer nivel de concreción curricular alinea el perfil de egreso con las competencias. En este trabajo, se han agrupado las competencias del programa en las siguientes categorías:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Básicas**: Necesarias para enfrentar diversas situaciones de vida.
+- **Generales**: Habilidades y capacidades para cualquier profesional.
+- **Disciplinares**: Habilidades y capacidades específicas para desempeñarse en su campo profesional (ingeniería, salud, etc.).
+- **Específicas**: Habilidades y capacidades propias del ingeniero de sistemas y aquellos elementos diferenciadores que identifican a nuestro profesional.
 
-## Build
+En el siguiente nivel, cada competencia se alinea con los Resultados de Aprendizaje del Programa (RAP) para asegurar una educación integral y pertinente.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Taxonomía de Bloom
 
-## Running unit tests
+Los RAP se mapean en la rueda de la Taxonomía de Bloom, permitiendo visualizar cómo el programa fomenta el desarrollo de habilidades cognitivas, desde el recuerdo hasta la creación.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Imagen de la Taxonomía de Bloom]('assets/images/taxonomia.svg')
 
-## Running end-to-end tests
+## Contribuciones
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Este proyecto está abierto a contribuciones de la comunidad académica. Si tienes sugerencias o comentarios, por favor, comunícate a glucio@unipacifico.edu.co

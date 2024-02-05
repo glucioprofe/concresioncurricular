@@ -1,0 +1,26 @@
+<div
+    *ngIf="item.activo"
+    (click)="toggleDetalles()"
+    [class.circle]="!mostrarDetalles"
+    [class.details]="mostrarDetalles"
+    [style.background-color]="color"
+    >
+  <!-- Si mostrarDetalles es falso, muestra &nbsp; para el círculo, de lo contrario, muestra los detalles -->
+  <ng-container *ngIf="!mostrarDetalles;">{{ item.id }}</ng-container>
+  <ng-container *ngIf="mostrarDetalles;">
+    <div class="competencia-info">
+      <div class="competencia-abr-id">{{ item.abr }}{{ item.id }}</div>
+      <div class="competencia-text">{{ item.detalle }}</div>
+    </div>
+
+  </ng-container>
+</div>
+<div class="competencia-raps" *ngIf="mostrarDetalles;">
+    <div class="raps-container">
+      <!-- Iterar sobre los raps para cada competencia -->
+      <div class="rap" *ngFor="let rap of item.raps">
+          <!-- Tus detalles de rap aquí -->
+          <app-rap [item]="rap"></app-rap>
+      </div>
+    </div>
+</div>

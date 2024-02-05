@@ -1,0 +1,19 @@
+<div (click)="toggleDetalles()"
+     [class.circle]="!mostrarDetalles"
+     [class.details]="mostrarDetalles"
+     [style.background-color]="taxonomia?.color+'88'">
+  <!-- Si mostrarDetalles es falso, muestra &nbsp; para el círculo, de lo contrario, muestra los detalles -->
+  <ng-container *ngIf="!mostrarDetalles;">{{ item.id }}</ng-container>
+  <ng-container *ngIf="mostrarDetalles;">
+    <div class="rap-info">
+      <div class="rap-abr-id">RAP{{ rap?.id }}
+
+      </div>
+      <div class="rap-text">{{ rap?.detalle }}
+        <br>
+        <small>Nivel: {{rap?.nivel}}</small>
+      </div>
+    </div>
+
+  </ng-container>
+</div>

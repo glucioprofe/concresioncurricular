@@ -1,0 +1,7 @@
+<div class="row">
+  <div *ngFor="let semestre of malla.semestres" class="col">
+    <div *ngFor="let curso of semestre.cursos">
+      <app-graph-item [curso]="curso"></app-graph-item>
+    </div>
+  </div>
+</div>

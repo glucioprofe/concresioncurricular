@@ -1,0 +1,39 @@
+<div class="row mt-3">
+  <div class="col-8">
+    <div class="card">
+      <div class="card-body p-0">
+        <div class="d-flex">
+          <div class="flex-shrink-0" [style.background]="getBgColor()" style="min-width: 320px;">
+            <div class=" centered-content">
+              <img [src]="'/assets/icons/'+componente.abr+'.svg'" alt="" width="280px" />
+            </div>
+          </div>
+          <div class="flex-grow-1 ms-3">
+            <!-- Some borders are removed -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item mb-0" *ngFor="let item of  cursos">
+                <p class="fw-bold mb-0">
+                  {{item.nombre}} Cr. {{item.creditos}}
+
+                </p>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item" *ngFor="let item of componentes">
+        <a [routerLink]="'/componentes/view/'+item.nombre">
+          <i class="fa-solid fa-square me-2" [style.color]="item.color"></i>
+          {{item.nombre}}
+        </a>
+      </li>
+    </ul>
+
+  </div>
+</div>

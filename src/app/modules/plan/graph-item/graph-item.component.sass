@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400..700;1,400..700&display=swap')
+.curso-card
+  font-family: 'Cuprum', sans-serif
+  transition: 0.3s
+  min-width: 100%
+  border-radius: 0px
+  display: inline-block
+
+  position: relative
+  cursor: pointer
+
+
+
+.curso-card:hover
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+
+.curso-info
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100%
+
+.curso-info .titulo-link
+  font-size: 1.05rem
+  text-align: center
+  color: black
+  line-height: 1.2rem
+  margin: 0
+  text-decoration: none
+  &:hover
+    color: #0f418b
+    text-shadow: 1px 1px 5px #fff
+.area-link
+  &:hover
+    color: #0f418b !important
+    text-shadow: 1px 1px 5px #fff
+    font-weight: bold
+.curso-titulo
+  margin: 0
+  padding: 6px
+  background: rgb(191,191,191)
+  background: linear-gradient(180deg, rgba(191,191,191,1) 0%, rgba(239,239,239,1) 75%)
+  min-height: 85px
+  display: flex
+  align-items: center
+  justify-content: space-around
+
+.detalles-curso
+  background-color: #efefef
+  border-top: 2px solid #ffffff
+  color: black
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  justify-content: space-around
+  span
+    text-align: center
+    font-size: 0.9rem
+
+
+.curso-footer
+  text-align: center
+  background-color: white
+  color: white
+  border-radius: 0 0 5px 5px
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+
+
+.color-bar
+  height: 4px
+
+.codigo
+  border-right: 2px solid #ffffff
+
+.linea
+  &:hover
+    height: 6px
+    transform: scale(1.1)

@@ -1,0 +1,9 @@
+  <div class="mb-5">
+    <div *ngFor="let semestre of malla.semestres" class="d-flex">
+      <div *ngFor="let curso of semestre.cursos">
+        <app-micro-item [curso]="curso"></app-micro-item>
+
+      </div>
+    </div>
+  </div>
+

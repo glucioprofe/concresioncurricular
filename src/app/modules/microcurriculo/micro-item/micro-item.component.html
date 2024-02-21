@@ -1,0 +1,17 @@
+<div class="card m-2" style="width: 140px; height: 100px;">
+  <div class="card-body text-center align-self-center" style="display: block; align-items: center; line-height: 1.2rem;" [ngClass]="{'no-disponible': !file}">
+    <i *ngIf="loading" class="fa-solid fa-spinner fa-spin"></i>
+    <p class="mb-0" *ngIf="!loading">
+      <a *ngIf="file" [href]="url" [download]="curso.codigo">{{ curso.nombre }}</a>
+      <span *ngIf="!file">{{ curso.nombre }}</span>
+
+    </p>
+    <small *ngIf="!loading">
+      <i *ngIf="ext=='xlsx'" class="fa-regular fa-lg fa-file-excel text-success me-2"></i>
+      <i *ngIf="ext=='docx'" class="fa-regular fa-lg fa-file-word text-primary me-2"></i>
+      <span *ngIf="!file">
+        {{ curso.codigo }}
+      </span>
+    </small>
+  </div>
+</div>

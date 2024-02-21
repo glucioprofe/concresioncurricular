@@ -1,0 +1,21 @@
+<!-- TuComponente.component.html -->
+<div class="curso-card" (click)="onClick()" (mouseover)="onMouseOver()" (mouseleave)="onMouseLeave()">
+  <div class="curso-info">
+    <div class="curso-titulo">
+      <a class="titulo-link" title="Microcurriculo">{{ curso.nombre }}</a>
+    </div>
+    <div class="detalles-curso">
+      <span class="codigo">{{ curso.codigo }}</span>
+      <span class="area-link codigo" [style.color]="getColorArea()" [title]="'Area: '+curso.area">{{ getAbrArea() }}</span>
+      <span class="credito" title="Créditos">{{ curso.creditos }}</span>
+    </div>
+  </div>
+  <div class="curso-footer">
+    <div class="color-bar codigo linea"
+        [style.background-color]="getColorComponente()"
+        [title]="'Componente: '+curso.componente"
+        [routerLink]="'/componentes/view/'+curso.componente"></div>
+    <div class="color-bar codigo linea" [style.background-color]="getColorCiclo()" [title]="'Ciclo: '+curso.ciclo"></div>
+    <div class="color-bar linea" [style.background-color]="getColorTipologia()" [title]="'Tipología: '+curso.tipologia"></div>
+  </div>
+</div>
